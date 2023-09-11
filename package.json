@@ -1,7 +1,7 @@
 {
   "name": "immigration-proj",
   "version": "0.1.0",
-  "homepage": "https://SrijayM.github.io/react-gh-pages",
+  "homepage": "https://SrijayM.github.io/immigration-proj",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
