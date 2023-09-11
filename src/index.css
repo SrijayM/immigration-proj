@@ -1,13 +1,239 @@
+html,
 body {
+  height: 100%;
+}
+body {
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-weight: 100;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+table {
+  border-radius: 10px;
+  width: 70%;
+  margin: auto;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  
+}
+th, td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 20px;
+}
+td{
+  font-weight: 400;
+}
+th {
+  text-align: center;
+}
+thead th {
+  background-color: #55608f;
+}
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+tbody td {
+  position: relative;
+}
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+.title-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #fff; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+
+}
+.title2 {
+  font-size: 3rem;
+  color: #3d2842;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.heading-text {
+  font-size: 1.5rem;
+  text-align: left;
+  color: #949494; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.container-two {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  
+}
+
+.input-text{
+  font-size: 0.9rem;
+  text-align: left;
+  color: #6f6870; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+}  
+
+.big-heading-text {
+  font-size: 2rem;
+  text-align: left;
+  color: #3d2842; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.edit-button {
+  margin-right: 20px;
+  background-color: #007bff; /* Blue background color, you can change it to your preferred color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  font-weight: 525;
+}
+
+.edit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.delete-button {
+  background-color: #d30303; /* Blue background color, you can change it to your preferred color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.delete-button:hover {
+  background-color: #af0009; /* Darker blue on hover */
+}
+
+.new-button {
+  background-color: #11b602; /* Blue background color, you can change it to your preferred color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.new-button:hover {
+  background-color: #0e9602; /* Darker blue on hover */
+}
+
+.check-box{
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.check-box-text{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.checkbox-container {
+  display: flex; 
+  align-items: center; 
+}
+
+.formInput{
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 15px;
+}
+
+input{
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+label{
+  font-size: 12px;
+  color: gray;
+}
+
+span{
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+input:invalid[focused="true"]{
+  border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ span{
+  display: block;
+}
+
+.new-bg{
+  width: 70%;
+  min-height: 100vh;
+  margin: auto;
+  background: white;
+  padding: 40px;
 }
